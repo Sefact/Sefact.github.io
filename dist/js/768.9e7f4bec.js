@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkpocket_clone"]=self["webpackChunkpocket_clone"]||[]).push([[768],{4768:function(e,n,a){a.r(n),a.d(n,{default:function(){return v}});var c=a(3396);const r={class:"canvas-wrapper"},t=(0,c._)("div",{id:"game"},"5555",-1),s=[t];function u(e,n,a,t,u,o){return(0,c.wg)(),(0,c.iD)("div",r,s)}var o=(0,c.aZ)({name:"GameMain",components:{},setup(){return(0,c.bv)((()=>{})),(0,c.Ah)((()=>{})),{}}}),i=a(89);const p=(0,i.Z)(o,[["render",u]]);var v=p}}]);
-//# sourceMappingURL=768.9e7f4bec.js.map
