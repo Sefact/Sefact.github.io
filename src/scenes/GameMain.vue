@@ -1,23 +1,36 @@
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, ref } from "vue";
+import { Game, createGameInstance } from "@/utils/game";
 
 export default defineComponent({
   name: "GameMain",
   components: {},
   setup() {
-    onMounted(() => {});
+    const gameCanvas = ref<HTMLDivElement | undefined>(undefined);
+    const game = ref<Game | undefined>(undefined);
 
-    onUnmounted(() => {});
+    onMounted(() => {
+      game.value = createGameInstance(1200, 600, 'gameCanvas');
+    });
 
-    return {};
+    onUnmounted(() => {
+      if(game.value) {
+        game.value.destroy();
+        game.value = undefined;
+      }
+    });
+
+    return {
+      gameCanvas,
+    };
   },
 });
 </script>
 
 <template>
-  <div class="canvas-wrapper">
-    <div id="game">5555</div>
-  </div>
+  <section class="canvas-wrapper">
+    <div id="game" ref="gameCanvas"></div>
+  </section>
 </template>
 
 <style scoped></style>
