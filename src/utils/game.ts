@@ -19,7 +19,7 @@ export interface CanvasSizeInterface {
 
 export class Game implements GameInterface {
   private readonly parentContainer: string;
-  private canvasSize: CanvasSizeInterface;
+  private readonly canvasSize: CanvasSizeInterface;
   private contentObject?: GameInterface;
 
   constructor(w: number, h: number, containerId: string) {

@@ -10,7 +10,7 @@ export default defineComponent({
     const game = ref<Game | undefined>(undefined);
 
     onMounted(() => {
-      game.value = createGameInstance(800, 600, 'gameCanvas');
+      game.value = createGameInstance(800, 600, 'game');
       game.value.loadContent();
     });
 
@@ -29,7 +29,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <section class="canvas-wrapper">
+  <section class="page">
     <div id="game" ref="gameCanvas"></div>
   </section>
 </template>

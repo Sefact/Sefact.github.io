@@ -10,6 +10,11 @@ class Start extends LayoutGame {
       key: "Start",
     });
   }
+  preload() {
+    super.preload();
+    this.load.image("bg", "assets/images/bg.jpeg");
+  }
+
   init(data: any): void {
     super.preload();
     this.width = this.sys.canvas.width;
@@ -20,11 +25,11 @@ class Start extends LayoutGame {
     this.initGame();
   }
   initGame(): void {
-    this.container = this.add.container(0, 0);
+    console.log("game: ", this.width, this.height);
     const bg = this.add
       .graphics()
       .fillStyle(0x000000, 1)
-      .fillRect(0, 0, this.width, this.height);
+      .fillRect(this.sys.canvas.width / 2, 0, this.width, this.height);
     if (this.container) {
       this.container.add(bg);
     }

@@ -1,22 +1,9 @@
 <script lang="ts">
-import { defineComponent, onMounted, onUnmounted } from "vue";
-
-export default defineComponent({
-  components: {},
-  setup() {
-    onMounted(() => {});
-
-    onUnmounted(() => {});
-
-    return {};
-  },
-  methods: {},
-});
 </script>
 
 <template>
   <div id="app">
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
