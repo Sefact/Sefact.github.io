@@ -1,4 +1,4 @@
-import Phaser from "phaser";
+import { Loader } from "@/utils/loader";
 
 const GAME_EVENT = {
   LOADED: "LOADED",
@@ -24,7 +24,7 @@ export class Game implements GameInterface {
 
   constructor(w: number, h: number, containerId: string) {
     this.parentContainer = containerId;
-    this.canvasSize = { width: w, height: h};
+    this.canvasSize = { width: w, height: h };
     this.create();
   }
 
@@ -37,13 +37,14 @@ export class Game implements GameInterface {
     }
   }
 
-  resize():void {}
+  resize(): void {}
 
   loadContent(): void {
     if (this.contentObject) {
       this.contentObject.destroy();
     }
-    this.contentObject = new;
+    this.contentObject = new Loader(this.canvasSize, this.parentContainer);
+    if (this.contentObject) this.contentObject.create();
   }
 }
 

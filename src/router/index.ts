@@ -4,7 +4,7 @@ const routes = [
   {
     path: "/",
     name: "Main",
-    component: () => import("../scenes/GameMain.vue"),
+    component: () => import("../components/Main.vue"),
   },
 ];
 

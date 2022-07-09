@@ -3,14 +3,15 @@ import { defineComponent, onMounted, onUnmounted, ref } from "vue";
 import { Game, createGameInstance } from "@/utils/game";
 
 export default defineComponent({
-  name: "GameMain",
+  name: "Main",
   components: {},
   setup() {
     const gameCanvas = ref<HTMLDivElement | undefined>(undefined);
     const game = ref<Game | undefined>(undefined);
 
     onMounted(() => {
-      game.value = createGameInstance(1200, 600, 'gameCanvas');
+      game.value = createGameInstance(800, 600, 'gameCanvas');
+      game.value.loadContent();
     });
 
     onUnmounted(() => {
