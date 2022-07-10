@@ -1,9 +1,11 @@
 import { LayoutGame } from "@/libs/LayoutGame";
+import GameConfig from "@/constants";
 
 class Start extends LayoutGame {
   private width: number = 0;
   private height: number = 0;
   private container: Phaser.GameObjects.Container | undefined;
+  private object: Phaser.GameObjects.Sprite | undefined;
 
   constructor() {
     super({
@@ -12,7 +14,6 @@ class Start extends LayoutGame {
   }
   preload() {
     super.preload();
-    this.load.image("bg", "assets/images/bg.jpeg");
   }
 
   init(data: any): void {
@@ -25,13 +26,53 @@ class Start extends LayoutGame {
     this.initGame();
   }
   initGame(): void {
-    console.log("game: ", this.width, this.height);
-    const bg = this.add
-      .graphics()
-      .fillStyle(0x000000, 1)
-      .fillRect(this.sys.canvas.width / 2, 0, this.width, this.height);
+    this.container = this.add.container(0, 0);
+    const bg = this.add.sprite(
+      0,
+      0,
+      GameConfig.ATLAS_LIST.CITY_SCENE.key,
+      "background"
+    );
+    this.object = this.add
+      .sprite(
+        0,
+        400,
+        GameConfig.ATLAS_LIST.CITY_SCENE.key,
+        "capguy/walk/0001.png"
+      )
+      .setScale(0.5, 0.5);
+
+    const setWalkAnimation = this.anims.generateFrameNames(
+      GameConfig.ATLAS_LIST.CITY_SCENE.key,
+      {
+        start: 1,
+        end: 8,
+        zeroPad: 4,
+        prefix: "capguy/walk/",
+        suffix: ".png",
+      }
+    );
+
     if (this.container) {
-      this.container.add(bg);
+      // this.container.add(bg);
+      // this.container.add(guy);
+      this.anims.create({
+        key: "walk",
+        frames: setWalkAnimation,
+        frameRate: 10,
+        repeat: -1,
+      });
+      this.object.anims.play("walk");
+      console.log("obj: ", this.object);
+    }
+  }
+
+  update(time: number, delta: number): void {
+    if (this.object) {
+      this.object.x += delta / 8;
+      if (this.object.x > 800) {
+        this.object.x = -50;
+      }
     }
   }
 }

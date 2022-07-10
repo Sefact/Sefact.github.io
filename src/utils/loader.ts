@@ -4,6 +4,7 @@ import { CanvasSizeInterface } from "@/utils/game";
 import config from "@/utils/config";
 import utils from "@/utils/utils";
 import { SCENE_LIST } from "@/scene-list";
+import { ATLAS_LIST } from "@/atlas-list";
 
 export class Loader extends GameBase {
   private game?: Phaser.Game;
@@ -40,7 +41,11 @@ export class Loader extends GameBase {
     if (this.game) {
       const scene = this.game.scene.getAt(0);
       if (scene) {
-        // scene.load.multiatlas(ATLAS_LIST.COMMON_0.key, ATLAS_LIST.COMMON_0.src, 'assets/sprite');
+        // scene.load.multiatlas(
+        //   ATLAS_LIST.CITY_SCENE.key,
+        //   ATLAS_LIST.CITY_SCENE.src,
+        //   "assets"
+        // );
       }
     }
   }
