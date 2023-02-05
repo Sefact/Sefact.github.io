@@ -22,6 +22,7 @@ export default defineConfig({
         sidebar: [
             {
                 text: 'Section Title A',
+                collapsed: true,
                 items: [
                     { text: 'Item A', link: '/item-a' },
                     { text: 'Item B', link: '/item-b' },
@@ -29,6 +30,7 @@ export default defineConfig({
             },
             {
                 text: 'Section Title B',
+                collapsed: true,
                 items: [
                     { text: 'Item C', link: '/item-c' },
                     { text: 'Item D', link: '/item-d' },
