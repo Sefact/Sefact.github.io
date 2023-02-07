@@ -9,5 +9,8 @@
   "devDependencies": {
     "prettier": "2.7.1",
     "vuepress": "^1.9.8"
+  },
+  "dependencies": {
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }

@@ -16,5 +16,6 @@ module.exports = {
             { text: "Home", link: "/" },
             { text: "About", link: "/about/" },
         ]
-    }
+    },
+    plugins: [["sitemap", { hostname: "https://sefact.github.io/" }]]
 };
