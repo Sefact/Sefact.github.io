@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sefact.github.io/sitemap.xml
