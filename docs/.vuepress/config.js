@@ -15,6 +15,18 @@ module.exports = {
         nav: [
             { text: "Home", link: "/" },
             { text: "About", link: "/about/" },
+        ],
+        sidebar: [
+            {
+                title: 'Group 1',
+                children: [ '/' ],
+                collapsable: true,
+            },
+            {
+                title: 'Group 2',
+                children: [ '/' ],
+                collapsable: true,
+            }
         ]
     },
     plugins: [["sitemap", { hostname: "https://sefact.github.io/" }]]
