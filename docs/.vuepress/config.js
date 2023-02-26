@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Vuepress",
+  title: "어제보다 조금 나아지기 위하여",
   description: "Description",
   head: [
     [
@@ -24,15 +24,15 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: "Group 1",
-        children: ["/guide/cwebp"],
+        title: "utils",
+        children: ["/utils/cwebp"],
         collapsable: true,
       },
-      {
-        title: "Group 2",
-        children: ["/"],
-        collapsable: true,
-      },
+      // {
+      //   title: "Group 2",
+      //   children: ["/"],
+      //   collapsable: true,
+      // },
     ],
   },
   plugins: [["sitemap", { hostname: "https://sefact.github.io/" }]],
