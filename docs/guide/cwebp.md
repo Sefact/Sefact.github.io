@@ -29,12 +29,6 @@ users  1100170  2 26 16:12 pizza.webp
 기존의 png 파일 대비해서 거의 7분의 1 정도의 용량 절감을 보여줍니다.
 
 
-## 이미지 비교
-변환 전 .png 파일 </br>
-![pizza png](~@source/images/pizza.png)
-
-변환 후 .webp 파일 </br>
-![pizza webp](~@source/images/pizza.webp)
 
 ## cwebp 옵션
 `-o string`
