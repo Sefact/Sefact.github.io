@@ -36,11 +36,4 @@ module.exports = {
     ],
   },
   plugins: [["sitemap", { hostname: "https://sefact.github.io/" }]],
-  configureWebpack: {
-    resolve: {
-      alias: {
-        "@guide": "/docs/guide",
-      },
-    },
-  },
 };
