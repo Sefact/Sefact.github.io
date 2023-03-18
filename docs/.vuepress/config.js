@@ -20,11 +20,11 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "About", link: "/about/" },
+      // { text: "About", link: "/about/" },
     ],
     sidebar: [
       {
-        title: "utils",
+        title: "Utils",
         children: ["/utils/cwebp"],
         collapsable: true,
       },
