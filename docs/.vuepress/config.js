@@ -24,6 +24,16 @@ module.exports = {
     ],
     sidebar: [
       {
+        title: "Python",
+        children: ["/python/basic"],
+        collapsable: true,
+      },
+      {
+        title: "Javascript",
+        children: ["/javascript/replace"],
+        collapsable: true,
+      },
+      {
         title: "Utils",
         children: ["/utils/cwebp"],
         collapsable: true,
