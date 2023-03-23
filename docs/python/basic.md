@@ -120,6 +120,24 @@ hello world!
 '  새로운 세상에 오신걸 환영합니다.'
 ```
 
+## 문자열의 구성 파악
+문자열에 대한 정보를 파악하기 위해서는 is로 시작하는 아래 목록에 있는 함수들을 이용합니다.
+- isalnum(): 알파벳 혹은 숫자로 구성되어 있는지 확인 
+- isalpha(): 알파벳만으로 구성되어 있는지 확인
+- isidentifier(): 식별자로 사용할수 있는지 확인
+- isdecimal(): 정수 형태인지 확인
+- isdigit(): 숫자로 인식될 수 있는지 확인
+- isspace(): 공백으로만 구성되어 있는지 확인
+- islower(): 소문자로만 구성되어 있는지 확인
+- isupper(): 대문자로만 구성되어 있는지 확인
+```python
+>>> print("address".isalnum())
+True
+>>> print("Address".islower())
+False
+```
+함수의 반환 타입은 boolean 형태로 True(참) 또는 Flase(거짓)을 반환해줍니다.
+
 ## 작성중
 
 <Comment />
