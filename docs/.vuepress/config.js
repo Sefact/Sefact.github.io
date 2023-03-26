@@ -25,7 +25,7 @@ module.exports = {
     sidebar: [
       {
         title: "Python",
-        children: ["/python/basic"],
+        children: ["/python/basic", "/python/basic2"],
         collapsable: true,
       },
       {
