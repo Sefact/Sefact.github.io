@@ -24,6 +24,11 @@ module.exports = {
     ],
     sidebar: [
       {
+        title: "Algorithm",
+        children: ["/algorithm/complexity"],
+        collapsable: true,
+      },
+      {
         title: "Python",
         children: ["/python/basic", "/python/basic2"],
         collapsable: true,
