@@ -146,4 +146,33 @@ print(list)
 ['문자', 5, 'A', 7, True, False]
 ```
 
+### 리스트 안에 리스트
+이렇게 리스트 안에 리스트를 가지는 리스트도 만들 수 있습니다.
+```python
+list_array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(list_array[1])
+[4, 5, 6]
+print(list_array[1][1])
+5
+```
+
+### 리스트 연산자
+리스트 간의 연결의 경우는 `+`를 리스트의 반복에는 `*`를 그리고 길이를 구할때는 `len()`구문을 사용합니다.
+```python
+list_a = [1, 2, 3]
+list_b = [4, 5, 6]
+
+print("list_a + list_b = ", list_a + list_b)
+list_a + list_b = [1, 2, 3, 4, 5, 6]
+
+print("list_a * list_b = ", list_a * list_b)
+list_a + list_b = [1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+print(len(list_a)
+3
+```
+
+### 리스트에 요소 추가
+작성중
+
 <Comment />
