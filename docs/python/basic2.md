@@ -173,6 +173,54 @@ print(len(list_a)
 ```
 
 ### 리스트에 요소 추가
-작성중
+리스트에 요소를 추가하는 방법은 2가지로 `append()` `insert()`가 존재합니다.
+```python
+리스트명.append(요소)
+```
+```python
+리스트명.insert(위치, 요소)
+```
+실제 코드에서는 아래와 같이 작동합니다
+```python
+list = [1, 2, 3]
+list.append(4)
+list.append(5)
+print(list)
+[1, 2, 3, 4, 5]
+
+# 0번째 위치에 10을 추가
+list.insert(0, 10)
+pirnt(list)
+[10, 1, 2, 3, 4, 5]
+```
+또한 한번에 여러 요소를 추가할 수 있으며, 이럴 때는 `extend()` 함수를 사용합니다.
+```python
+list = [1, 2, 3]
+list.extend([4, 5, 6])
+print(list)
+[1, 2, 3, 4, 5]
+```
+
+### 리스트 연결 연산자와 요소 추가의 차이
+연결 연산자를 사용하는 경우 `extned()` 함수를 이용한 것과 비슷한 형태로 작동합니다.
+```python
+list_a = [1, 2, 3]
+list_b = [4, 5, 6]
+print(list_a + list_b)
+[1, 2, 3, 4, 5, 6]
+print(list_a)
+[1, 2, 3]
+print(list_b)
+[4, 5, 6]
+```
+위의 경우처럼 연결 연산자를 사용하는 경우에는 실제 원본에는 아무 변화가 없습니다.
+```python
+list_a = [1, 2, 3]
+list_b = [4, 5, 6]
+list_a.extend(list_b)
+print(list_a)
+[1, 2, 3, 4, 5, 6]
+```
+하지만 `extend()` 함수를 이용한 경우에는 원본에도 영향이 가게 됩니다.
 
 <Comment />
