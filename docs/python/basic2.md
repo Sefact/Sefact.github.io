@@ -271,4 +271,20 @@ print(list)
 []
 ```
 
+### 리스트 내부에 값 확인
+리스트 내부에 값이 있는지 판단할 때는 `in` 연산자를 사용하며, 반대로 값이 없는 것을 확인할 때에는 `not in` 연산자를 사용합니다.
+```python
+값 in 리스트
+```
+```python
+값 not in 리스트
+```
+```python
+list = [11, 17, 29, 91, 53]
+print(17 in list)
+True 
+print(17 not in list)
+False 
+```
+
 <Comment />
