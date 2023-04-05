@@ -411,4 +411,76 @@ dict:  type :  동물
 dict:  age :  3
 ```
 
+## 반복문과 범위
+앞에서도 잠깐 설명한적이 있지만 특정한 횟수만큼 반복하고 싶을때는 for문과 `range` 즉 범위를 조합해서 사용합니다.
+```python
+# 각각의 매개변수는 숫자를 의미한다
+range(A)         # 0부터 (A - 1)까지의 범위를 의미
+range(A, B)      # A부터 (B - 1)까지의 범위를 의미
+range(A, B, C)   # A부터 (B - 1)까지의 범위를 가지며 앞뒤가 C만큼씩 차이가 난다는 것을 의미
+```
+```python
+print(list(range(10)))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(list(range(0, 5)))
+[0, 1, 2, 3, 4]
+print(list(range(0, 10, 2)))
+[0, 2, 4, 6, 8]
+```
+
+### 범위와 함께 for 반복문 사용
+for 반복문과 range 범위를 조합하여 사용 가능합니다.
+```python
+for 숫자 변수 in 범위:
+    코드
+```
+```python
+for i in range(5):
+    print("num: ", i)
+    
+# 출력 결과
+num:  0
+num:  1
+num:  2
+num:  3
+num:  4
+```
+
+### 리스트와 범위 조합해서 사용
+```python
+array = [10, 20, 30]
+for item in array:
+    print("item: ", item)
+    
+# 출력 결과
+item:  10
+item:  20
+item:  30
+```
+
+### 역반복문
+반대로 반복하기 위해서는 `range()` 함수의 매개변수를 이용하는 방법과 `reversed()` 함수를 사용하는 방법이 존재합니다.
+```python
+for i in range(4, -1, -1):
+    print("i: ", i)
+    
+# 출력 결과
+i:  4
+i:  3
+i:  2
+i:  1
+i:  0
+```
+```python
+for i in reversed(range(5)):
+    print("i: ", i)
+
+# 출력 결과
+i:  4
+i:  3
+i:  2
+i:  1
+i:  0
+```
+
 <Comment />
