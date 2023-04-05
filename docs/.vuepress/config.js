@@ -26,21 +26,37 @@ module.exports = {
       {
         title: "Algorithm",
         children: ["/algorithm/complexity"],
+        sidebarDepth: 3,
         collapsable: true,
       },
       {
         title: "Python",
         children: ["/python/basic", "/python/basic2"],
+        sidebarDepth: 3,
         collapsable: true,
       },
       {
         title: "Javascript",
         children: ["/javascript/replace"],
+        sidebarDepth: 3,
         collapsable: true,
       },
       {
         title: "Utils",
         children: ["/utils/cwebp"],
+        sidebarDepth: 3,
+        collapsable: true,
+      },
+      {
+        title: "Computer Science",
+        children: ["/computer/ai"],
+        sidebarDepth: 3,
+        collapsable: true,
+      },
+      {
+        title: "Privacy",
+        children: ["/privacy/2022"],
+        sidebarDepth: 3,
         collapsable: true,
       },
       // {
