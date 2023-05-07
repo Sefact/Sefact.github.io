@@ -1,6 +1,7 @@
 # 어제보다 조금 나아지기 위하여
 
 ## Algorithm
+* [파이썬 코딩 테스트 기본 문법](/algorithm/basic.html)
 * [시간 복잡도](/algorithm/complexity.html)
 
 ## Python
@@ -12,6 +13,5 @@
 
 ## Utils
 * [Mac에서 webp 변환](/utils/cwebp.html)
-
 
 [//]: # (<Comment />)
