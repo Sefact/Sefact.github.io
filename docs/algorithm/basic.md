@@ -396,7 +396,7 @@ print(f"정답은 {answer}입니다.")
 정답은 7입니다.
 ```
 
-### 조건문
+## 조건문
 프로그램의 흐름을 제어하는 문법으로 조건에 따라서 프로그램을 로직을 설정할 수 있게 끔 해준다
 ```Python
 # 조건문의 기본 형태
@@ -421,7 +421,7 @@ else:
 2번째 조건과 일치
 ```
 
-#### 비교 연산자
+### 비교 연산자
 `비교연산자`는 특정한 두 값을 비교할 때 사용
 |  비교연산자  |  설명  |
 |:---:|:---:|
@@ -432,7 +432,7 @@ else:
 |  X >= Y  |  X가 Y보다 크거나 같을 때 True |
 |  X <= Y  |  X가 Y보다 작거나 같을 때 True |
 
-#### 논리 연산자
+### 논리 연산자
 논리 값 (True/False) 사이의 연산을 수행할 떄 사용
 |  논리연산자  |  설명  |
 |:---:|:---:|
@@ -440,14 +440,14 @@ else:
 |  X or Y  |  X와 Y중에 하나라도 True인 경우 True |
 |  not X  |  X가 False인 경우 True |
 
-#### 기타 연산자
+### 기타 연산자
 데이터의 포함 여부를 판단하기 위한 연산자
 |  in 연산자와 not in 연산자  |  설명  |
 |:---:|:---:|
 |  x in 리스트  |  리스트 안에 x가 들어가 있는 경우 True |
 |  x not in 문자열  |  문자열 안에 x가 들어가 있지 않은 경우 True |
 
-#### 조건문 간소화
+### 조건문 간소화
 ```Python
 # 조건문 내부 코드가 한 줄인 경우 줄바꿈을 하지 않고 작성 가능
 score = 85
@@ -466,7 +466,7 @@ Success
 Success
 ```
 
-#### 조건문 내에서 부등식 사용
+### 조건문 내에서 부등식 사용
 ```Python
 # and 연산자를 이용한 조건
 x = 15
@@ -483,8 +483,335 @@ x는 0 이상 20 미만의 수
 x는 0 이상 20 미만의 수
 ```
 
-### 반복문
-작성 중
+## 반복문
+특정한 소스를 반복적으로 실행하고자 할 떄 사용
+```Python
+# 1부터 9까지의 정수의 합을 구하기 위한 반복문
+i = 1
+result = 0
+
+while i <= 9:
+  result += i
+  i += 1
+
+print(result)
+```
+```Python
+# 실행 결과
+45
+```
+
+### 무한 루프
+반복문의 종료 조건에 도달하지 못하게 작성된 경우 끊임 없이 반복 되는 `무한 루프(Infinite Loop)`가 발생
+```Python
+x = 10
+
+# x가 계속 10보다 크기 때문에 계속 x를 출력
+while x > 5:
+  print(x)
+```
+
+### 반복문(for문)
+while이 아닌 for문을 이용하여 반복문을 작성할 수 있으며, for문의 구조는 특정한 변수를 이용하여 `in` 뒤에 오는 데이터(리스트, 튜플)에 포함되어 있는 원소를 첫 번째 인덱스부터 차례대로 하나씩 방문하는 형태로 구성
+```Python
+for 변수 in 리스트:
+  반복할 코드
+```
+
+#### for _ in range()
+연속적인 값을 차례대로 순회할 때는 `range()`를 주로 사용
+* range(시작, 끝)의 형태로 구성
+* 내부 값을 하나만 넣은 경우는 시작 값은 무조건 0으로 구성
+```Python
+result = 0
+
+for i in range(1, 10):
+  result += i
+  
+print(result)
+```
+```Python
+# 실행 결과
+45
+```
+
+#### continue
+코드의 실행을 건너뛰고, 다음 반복을 진행하고자 하는 경우에는 `continue` 키워드를 사용
+```Python
+result = 0
+
+for i in range(1, 10):
+  if i % 2 == 0:
+    continue
+  result += i
+  
+print(result)
+```
+```Python
+# 실행 결과
+25
+```
+
+#### break
+`break`는 반복문을 즉시 종료할 때 사용합니다
+```Python
+i = 1
+
+while True:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+```
+```Python
+# 실행 결과
+1
+2
+3
+```
+
+## 함수
+`함수(Function)`는 특정한 작업을 하나의 단위로 묶어 놓은 것을 의미
+
+### 함수의 종류
+* 파이썬에서 기본적으로 제공하는 `내장 함수`
+* 개발자가 직접 정의하여 사용할 수 있는 `사용자 정의 함수`
+
+### 함수 정의
+함수는 함수 내부에서 사용할 변수인 `매개변수` 와 결과를 반환할 `반환값`으로 구성되어 있습니다
+```Python
+def 함수명(매개변수):
+  실행할 코드
+  return 반환 값
+```
+
+### global
+`global` 키워드는 지역 변수가 아닌 함수 바깥에 선언된 변수를 바로 참조하기 위해서 사용
+```Python
+a = 0
+
+def func():
+  global a
+  a += 1
+  
+for i in range(10):
+  func()
+  
+print(a)
+```
+```Python
+# 실행 결과
+10
+```
+
+### 여러 개의 반환 값
+여러 개의 반환 값도 가질 수 있습니다
+```Python
+def operator(a, b):
+  add_var = a + b
+  subtract_var = a - b
+  multiply_var = a * b
+  divide_var = a / b
+  return add_var, subtract_var, multiply_var, divide_var
+a, b, c, d = operator(7, 3)
+print(a, b, c, d)
+```
+```Python
+# 실행 결과
+10 4 21 2.3333333333333335
+```
+
+## 람다 표현식
+`람다(lambda)` 표현식을 이용하면 함수를 선언하지 않고 특정한 기능을 간단하게 작성할 수 있습니다
+```Python
+def add(a, b):
+  return a + b
+  
+# add() 함수 사용
+print(add(3, 7))
+
+# 람다 표현식으로 add() 함수 구현
+print((lambda a, b: a + b)(3, 7))
+```
+```Python
+# 실행 결과
+10
+10
+```
+
+### 내장함수에서 자주 사용하는 람다 함수
+```Python
+array = [('홍길동', 50), ('이순신', 32), ('아무개', 74)]
+
+def my_key(x):
+  return x[1]
+  
+print(sorted(array, key=my_key))
+print(sorted(array, key=lambda x: x[1]))
+```
+```Python
+# 실행 결과
+[('이순신', 32), ('홍길동', 50), ('아무개', 74)]
+[('이순신', 32), ('홍길동', 50), ('아무개', 74)]
+```
+
+### 여러 개의 리스트에 적용
+```Python
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
+
+result = map(lambda a, b: a + b, list1, list2)
+print(result)
+```
+```Python
+# 실행 결과
+[7, 9, 11, 13, 15]
+```
+
+## 표준 라이브러리
+* 내장함수: 기본 입출력 함수부터 정렬 함수까지 기본적인 함수 제공
+* itertools: 반복되는 형태의 데이터를 처리가히 위한 유용한 기능을 제공
+  * 순열과 조합 라이브러리가 주로 사용됨
+* heapq: 힙(Heap) 자료구조를 제공하며 우선순위 큐 기능을 구현하기 위해 사용
+* bisect: 이진 탐색(Binary Search) 기능을 제공
+* collections: 덱(deque), 카운터(Counter) 등의 자료구조가 포함
+* math: 필수적인 수학적 기능을 제공
+
+### 자주 사용되는 내장 함수
+```Python
+# sum()
+result = sum([1, 2, 3, 4, 5])
+print(result)
+
+# min(), max()
+min_result = min(7, 3, 5, 2)
+max_result = max(7, 3, 5, 2)
+print(min_result, max_result)
+
+# eval()
+result = eval("(3+5)*7")
+print(result)
+
+# sorted()
+result = sorted([9, 1, 8, 5, 4])
+reverse_result = sorted([9, 1, 8, 5, 4], reverse=True)
+print(result)
+print(reverse_result)
+
+# sorted() with key
+array = [('홍길동', 35), ('이순신', 75), ('아무개', 50)]
+result = sorted(array, key=lambda x: x[1], reverse=True)
+print(result)
+```
+```Python
+# 실행 결과
+15
+2 7
+56
+[1, 4, 5, 8, 9]
+[9, 8, 5, 4, 1]
+[('이순신', 75), ('아무개', 50), ('홍길동', 35)]
+```
+
+### 순열과 조합
+* 순열: 서로 다른 n개에서 서로 다른 r개를 선택하여 일렬로 나열하는 것
+  * {'A', 'B', 'C'}에서 3개를 선택하여 나열하는 경우: 'ABC', 'ACB', 'BAC', 'BCA', 'CAB', 'CBA'
+* 조합: 서로 다른 n개에서 순서에 상관 없이 서로 다른 r개를 선택하는 것
+  * {'A', 'B', 'C'}에서 순서를 고려하지 않고 2개를 뽀는 경우: 'AB', 'AC', 'BC'
+<center>순열의 수: nPr = n * (n - 1) * (n - 2) * ··· * (n - r + 1)</center>
+<center>조합의 수: nCr = n * (n - 1) * (n - 2) * ··· * (n - r + 1) / r!</center>
+
+```Python
+# 순열 구하기
+from itertools import permutations
+
+data = ['A', 'B', 'C']
+
+result = list(permutations(data, 3))
+print(result)
+```
+```Python
+[('A', 'B', 'C'), ('A', 'C', 'B'), ('B', 'A', 'C'), ('B', 'C', 'A'), ('C', 'A', 'B'), ('C', 'B', 'A')]
+```
+```Python
+# 조합 구하기
+from itertools import combinations
+
+data = ['A', 'B', 'C']
+
+result = list(combinations(data, 2))
+print(result)
+```
+```Python
+[('A', 'B'), ('A', 'C'), ('B', 'C')]
+```
+
+### 중복 순열과 중복 조합
+```Python
+# 중복을 허용하여 2개를 뽑는 모든 순열
+from itertools import product
+
+data = ['A', 'B', 'C']
+
+result = list(product(data, repeat=2))
+print(result)
+
+# 중복을 허용하여 2개를 뽑는 모든 조합
+from itertools import combinations_with_replacement
+
+data = ['A', 'B', 'C']
+
+result = list(combinations_with_replacement(data, 2))
+print(result)
+```
+```Python
+[('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'B'), ('B', 'C'), ('C', 'A'), ('C', 'B'), ('C', 'C')]
+[('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'B'), ('B', 'C'), ('C', 'C')]
+```
+
+### 카운터(Counter)
+Python collections 라이브러리의 `Counter`는 등장 횟수를 세는 기능을 제공합니다
+* 리스트와 같이 반복 가능한 객체가 주어졌을 때 내부의 원소가 몇 번 등장했는지 알려줍니다
+```Python
+# 중복을 허용하여 2개를 뽑는 모든 순열
+from collections import Counter
+
+counter = Counter(['red', 'blue', 'green', 'blue', 'blue'])
+
+# 'blue'와 'green'의 등장 횟수 출력
+print(counter['blue'])
+print(counter['green'])
+
+# 사전 자료형으로 변환
+print(dict(counter))
+```
+```Python
+3
+1
+{'red': 1, 'blue': 3, 'green': 1}
+```
+
+### 최대 공약수와 최소 공배수
+```Python
+import math
+
+# 최소 공배수(LCM)를 구하는 함수
+def lcm(a, b):
+  return a * b // math.gcd(a, b)
+  
+a = 21
+b = 14
+
+# 최대 공약수(GCD) 계산
+print(math.gcd(21 ,14))
+
+# 최소 공배수(LCM) 계산
+print(lcm(21, 14)) 
+```
+```Python
+7
+42
+```
 
 ## Reference
 ### 나동빈님의 이코테 2021 강의
