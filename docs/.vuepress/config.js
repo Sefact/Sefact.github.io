@@ -61,5 +61,13 @@ module.exports = {
       // },
     ],
   },
-  plugins: [["sitemap", { hostname: "https://sefact.github.io/" }]],
+  plugins: [
+    ["sitemap", { hostname: "https://sefact.github.io/" }],
+    [
+      "@vuepress/google-analytics",
+      {
+        ga: 352611537,
+      },
+    ],
+  ],
 };
