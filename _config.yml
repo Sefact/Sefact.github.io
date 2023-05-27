@@ -47,7 +47,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+google_site_verification: FgpIZrE0oG2mIlCq_OhVjPK_i9wAaRk8cI7i2pKvCr8
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -80,7 +80,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: '/assets/img/profile/profile.png'
 
 # boolean type, the global switch for TOC in posts.
 toc: true
