@@ -20,7 +20,7 @@ timezone: Asia/Seoul
 
 title: Sefact # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: 오늘 하루도 힘내자 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
