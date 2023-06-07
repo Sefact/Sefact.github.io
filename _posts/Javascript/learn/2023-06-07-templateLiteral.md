@@ -16,6 +16,8 @@ console.log(template); // Hello World!!!
 
 기존의 방식과 다르게 템플릿 리터럴을 사용하면 `멀티라인 문자열`, `표현식 삽입`, `태그드 템플릿` 등 다양한 기능을 사용할 수 있습니다.
 
+<br>
+
 ## 멀티라인 문자열
 기존의 따옴표를 사용하는 방식은 아래와 같이 줄바꿈을 하기 위해서는 `\n` 개행문자를 사용하여야 했습니다.
 ```javascript
@@ -31,6 +33,8 @@ var backtick = `Hello
                 World`
 console.log(str);
 ```
+
+<br>
 
 ## 표현식 삽입
 ES6 이전에는 문자열을 연결 하기 위해서는 `+` 연산자를 이용하여 아래와 같이 사용하였습니다.
@@ -49,6 +53,8 @@ var num = 10;
 var str = '사과';
 console.log(`과일 가게에서 ${num}개의 ${str}를 사왔습니다.`); // 과일 가게에서 10개의 사과를 사왔습니다.
 ```
+
+<br>
 
 ## 태그드 템플릿
 템플릿 리터럴의 발전된 형태로 태그를 사용하여 템플릿 리터럴을 함수로 파싱할 수 있게 해줍니다.
@@ -79,6 +85,8 @@ function getTodayFood(str, food, taste) {
 const snacks = getTodayFood`Today's snack is ${food} ${taste}`;
 console.log(snacks); // Today's snack is ice cream salty
 ```
+
+<br>
 
 ## Reference
 
