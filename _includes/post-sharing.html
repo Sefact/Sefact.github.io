@@ -20,7 +20,7 @@
             message="{{ title }}"
             url="{{ url }}"
             {%- if share.instances -%}
-            customInstanceList="{{ share.instances | jsonify | xml_escape }}"
+              customInstanceList="{{ share.instances | jsonify | xml_escape }}"
             {%- endif %}
           >
             <i class="fa-fw {{ share.icon }}"></i>
