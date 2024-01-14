@@ -3,6 +3,9 @@ title: "효율적인 개발자 목표 설정 가이드"
 date: 2023-12-24 19:34:31 +0900
 categories: [Story]
 tags: [story, developer, life]
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 # 글을 쓰게 된 이유

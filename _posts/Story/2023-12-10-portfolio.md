@@ -3,6 +3,9 @@ title: "신입 개발자 이력서 작성법 (어떻게 써야 할까?)"
 date: 2023-12-10 01:5:00 +0900
 categories: [Story, Daily]
 tags: [story, developer, life, portfolio]
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 # 시작하기에 앞서
