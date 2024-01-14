@@ -2,4 +2,14 @@ User-agent: *
 
 Allow: /
 
+Disallow: /page/
+
+Disallow: /categories/
+
+Disallow: /tags/
+
+Disallow: /archives/
+
+Disallow: /about/
+
 Sitemap: https://sefact.github.io/sitemap.xml
