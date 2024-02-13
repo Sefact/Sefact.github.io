@@ -3,11 +3,9 @@ title: "소프트웨어 설계 가이드 (부제: 설계를 그래서 왜 하는
 date: 2024-02-03 17:22:55 +0900
 categories: [Story]
 tags: [story, developer, architecture]
-math: true
-mermaid: true
 image:
   path: /assets/img/posts/the-square-hole.png
-  lqip: data:image/webp;base64
+  alt: the-square-hole
 sitemap :
   changefreq : daily
   priority : 1.0
