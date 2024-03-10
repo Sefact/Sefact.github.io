@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d669345-994a-4576-8924-0414257bed80" name="Changes" comment="" />
+    <list default="true" id="d44ad347-be7b-432f-b975-26921cebe047" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/_posts/Algorithm/CodeTree/2024-02-29-code-tree-review.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ads.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/annoucments-pivot.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/callback-meme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/codetree-curriculum-list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/codetree-curriculum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/codetree-github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/eeveelution.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/experience-job.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/final_maybe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/geultto-code-tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/infcon-header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/infcon-kakaotalk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/infcon-participant-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/infcon-participant-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/infcon-participant-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/infcon-presentation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/infcon-program.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/infcon-schedule.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/java_two.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/job-interview-meme.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/krusty-krab-training.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/mudo-seho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/new-york-programmer.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/programmers-main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/programmers-profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/promises.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/quality-assurance-meme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/rallit-hub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/rallit-main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/slam-dunk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/the-square-hole.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/to-do-list-meme.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/vue-components.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/wanted-main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/posts/your-level.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments-providers/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments-providers/custom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head/custom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/svg/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/svg/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/android-chrome-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/android-chrome-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assets/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mstile-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mstile-144x144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mstile-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mstile-150x150.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mstile-310x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mstile-310x150.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mstile-310x310.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mstile-310x310.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mstile-70x70.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mstile-70x70.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/safari-pinned-tab.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/safari-pinned-tab.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/authors.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_data/authors.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -627,7 +685,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="오타 수정" />
     <MESSAGE value="chirpy 최신 버전으로 변경" />
     <MESSAGE value="actions 버전 변경" />
     <MESSAGE value="2023년 회고록" />
@@ -652,7 +709,8 @@
     <MESSAGE value="코드트리 게시글 작성" />
     <MESSAGE value="뉴욕의 프로그래머 글 작성" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="파일 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="파일 정리" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

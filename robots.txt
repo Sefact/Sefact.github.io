@@ -1,0 +1,13 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /page/
+
+Disallow: /tags/
+
+Disallow: /archives/
+
+Disallow: /about/
+
+Sitemap: https://sefact.github.io/sitemap.xml
