@@ -1,6 +1,6 @@
 ---
 title: "[글또 x 유데미] 클린코드 자바스크립트 수강 후기"
-date: 2024-03-31 21:18:32 +0900
+date: 2024-03-30 21:18:32 +0900
 categories: [Javascript, Learn]
 tags: [javascript, learn, basic, coding]
 image:
