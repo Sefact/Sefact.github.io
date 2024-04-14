@@ -4,7 +4,7 @@ date: 2024-04-14 11:08:15 +0900
 categories: [NodeJS, Learn]
 tags: [nodejs, learn, basic, coding]
 image:
-path: /assets/img/posts/geultto-udemy.webp
+  path: /assets/img/posts/geultto-udemy.webp
 ---
 
 ## 시작하며
